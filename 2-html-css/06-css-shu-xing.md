@@ -99,7 +99,7 @@
 `使用 CSS 概览功能`
 
 * [Example HTML Website](https://appbrewery.github.io/just-add-css/)
-* Chrome开发者工具
+* Chrome开发者工具：在其所做的任何更改（暂时的，供你观察和尝试）不会影响到你的原始文件
   * 打开
     * More Tools -> Developer Tools
     * 快捷键：`command`+`option`+`i` （windows）：`control`+`shift`+`i` （功能键）`F12`&#x20;
@@ -112,15 +112,33 @@
         <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.00.09 (1).png" alt=""><figcaption></figcaption></figure>
 
         </div>
-  * 元素（Element）选项卡的子部分
-    * 样式（Styles）部分：显示应用于元素的样式
-      * 单击style.css显示源码
-      *
+  *   元素（Element）选项卡的子部分
 
-          <figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
-      * 更改CSS工具
-        * 1
-        *
+      *   样式（Styles）部分：显示应用于元素的样式
+
+          * 单击style.css，显示其源码
+
+          <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.08.08.png" alt=""><figcaption><p>单击style.css，显示其源码</p></figcaption></figure>
+
+          *   更改CSS工具
+
+              * eg. 选择`h1`，单击“添加”，就可以为这个`h1`添加样式
+
+              <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.10.41 (1).png" alt=""><figcaption><p>选择<code>h1</code>，单击“添加”，就可以为这个<code>h1</code>添加样式</p></figcaption></figure>
+          * 当自己的规则覆盖其他现有的规则
+
+          <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.21.52.png" alt=""><figcaption></figcaption></figure>
+      * 如何知道实际应用到你的CSS元素上的内容呢？\
+        计算后的样式（Computerd）部分：用于查看 HTML 元素**最终计算样式**的部分
+
+      <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.26.16.png" alt=""><figcaption></figcaption></figure>
+  *   CSS Overview：显示一堆有的东西（颜色、字体...）
+
+      <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.28.48.png" alt=""><figcaption></figcaption></figure>
+
+      <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.30.57.png" alt=""><figcaption></figcaption></figure>
+
+      * [CSS Inspection](https://appbrewery.github.io/css-inspection/)
 
 
 
