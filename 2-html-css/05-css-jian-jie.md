@@ -329,7 +329,24 @@
 
 ### ★  \[项目] 颜色词汇网站
 
-`学习西班牙语的网站`
+`学习西班牙语的网站`&#x20;
+
+```html
+<!-- 
+TODOs
+重要提示：**不需要对 index.html 文件做任何修改**
+所有的代码都应写在你的 CSS 文件中。
+
+1. 创建一个 CSS 文件，并将其作为外部样式表引入。
+2. 使用 CSS 为每个颜色标题设置样式，使其符合颜色含义。
+   提示：如果不理解西班牙语单词，可以利用元素的 id 辅助判断。
+3. 使用 CSS 将所有颜色标题的字体样式改为 "font-weight: normal;"。
+4. 使用 CSS（而非 HTML）将所有图片的高度和宽度设置为 200px。
+   提示：
+   https://developer.mozilla.org/en-US/docs/Web/CSS/height
+   https://developer.mozilla.org/en-US/docs/Web/CSS/width
+-->
+```
 
 ```html
 <!DOCTYPE html>

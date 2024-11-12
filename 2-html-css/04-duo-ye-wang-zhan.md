@@ -52,6 +52,24 @@
 ### ★\[项目] HTML 作品集
 
 ```html
+<!-- TODO 1: 创建 HTML 基本模板 -->
+
+<!-- TODO 2: 将你的过往项目的 HTML 文件添加到 public 文件夹中 -->
+
+<!-- TODO 3: 对项目的预览截图并将图片添加到 images 文件夹中 -->
+
+<!-- TODO 4: 添加标题/副标题等信息 -->
+
+<!-- TODO 5: 添加指向项目页面的链接 -->
+
+<!-- TODO 6: 添加用于显示项目预览的图片
+提示 (TODO 6): 你可以将高度属性设置为 200 来缩小图片大小：
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
+
+<!-- TODO 7: 添加“联系我”和“关于我”页面的链接 -->
+```
+
+```html
 <!DOCTYPE html>
 <html lang="zh">
   <head>

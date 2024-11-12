@@ -41,11 +41,11 @@
 
       * 1 px（Pixel 像素）: 1/96th inch (0.26mm✖️0.26mm)
       * 1 pt（Point 磅点）: 1/72nd inch(0.35mm✖️0.35mm) 【word文档的字体用pt】
-      * 1 em（）: 100% of parent: 相对上一级
+      * 1 em（）: 100% of parent 【相对于HTML元素的父级；文本的动态尺寸，相对于标准的 16px = 1em】
         *
 
             <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 15.55.11.png" alt=""><figcaption></figcaption></figure>
-      * 1 rem（）: 100% of root：根据\<html>
+      * 1 rem（）: 100% of root 【文本的动态尺寸，相对于根元素；优先用于文本】
 
       <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 16.02.53.png" alt=""><figcaption><p>px vs. pt vs. em vs. rem</p></figcaption></figure>
 * Font Weight
@@ -177,7 +177,7 @@
     * height width&#x20;
     * `Border`&#x20;
     * ```css
-      border: 10px solid black;/* 1边框的厚度 2边框的样式 3边框的颜色*/
+      border: 10px solid black;/* 1边框的厚度 2边框的样式 Dashed 3边框的颜色*/
       /* 注意：html元素的盒子盒子（height width）没有改变 */
       ```
 
@@ -194,37 +194,38 @@
     <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.54.35.png" alt="" width="563"><figcaption></figcaption></figure>
 
     </div>
-*   `Padding`&#x20;
 
-    <div align="left">
+    *   `Padding`&#x20;
 
-    <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.58.12 (1).png" alt="" width="375"><figcaption><p>无法使用padding获得元素之间的间距</p></figcaption></figure>
+        <div align="left">
 
-    </div>
-*   `Margin`&#x20;
+        <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.58.12 (1).png" alt="" width="375"><figcaption><p>无法使用padding获得元素之间的间距</p></figcaption></figure>
 
-    <div align="left">
+        </div>
+    *   `Margin`&#x20;
 
-    <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 18.00.39 (1).png" alt="" width="375"><figcaption></figcaption></figure>
+        <div align="left">
 
-    </div>
-*   检查器的Box Model &#x20;
+        <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 18.00.39 (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-    <div align="left">
+        </div>
+    *   检查器的Box Model &#x20;
 
-    <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 18.04.56.png" alt=""><figcaption></figcaption></figure>
+        <div align="left">
 
-    </div>
-* [CSS Box Model](https://appbrewery.github.io/box-model/)
-*   Padding/Margin/Border-width设值&#x20;
+        <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 18.04.56.png" alt=""><figcaption></figcaption></figure>
 
-    <div align="left">
+        </div>
+    * [CSS Box Model](https://appbrewery.github.io/box-model/)
+    *   Padding/Margin/Border-width设值&#x20;
 
-    <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 18.08.21.png" alt="" width="563"><figcaption></figcaption></figure>
+        <div align="left">
 
-    </div>
+        <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 18.08.21.png" alt="" width="563"><figcaption></figcaption></figure>
+
+        </div>
 * 人造盒子：将不同的内容的内容组合在一起，以便对其设置样式\
-  \<div>（content division Element 内容划分元素）
+  \<div>\</div>（content division Element 内容划分元素）
   * 将一组HTML元素组合成一个盒子
   * 对于组织和划分网页内容非常有用
 * [pesticide chrome extension](https://chromewebstore.google.com/detail/pesticide-for-chrome/bakpbgckdnepkmkeaiomhmfcnejndkbi?hl=en)：用于 **调试网页布局** 的 Chrome 浏览器扩展工具
@@ -239,13 +240,84 @@
 
 `制作自己的表情包`
 
+```html
+<!-- 
+  TODO: 创建一个励志风格的网页。
+  可以根据自己的喜好进行样式设计。
+  可以参考目标图片进行灵感设计。
+  但网页必须包含以下功能：
+1. 主标题 h1 文本应使用 Google Fonts 中的 Regular Libre Baskerville 字体：
+  https://fonts.google.com/specimen/Libre+Baskerville
+2. 文本应为白色，背景为黑色。
+3. 在 assets 文件夹内的 images 文件夹中添加一张自己的图片。图片需有 5px 的白色边框。
+4. 文本应居中对齐。
+5. 创建一个 div 容器来包含 h1、p 和 img 元素。调整边距，使图片和文本在页面上居中显示。
+  提示：可以通过设置 div 宽度为 50%，并设置 margin-left 为 25% 来水平居中 div。
+  提示：将图片的宽度设置为 100%，以便图片填满 div 容器。
+6. 在 MDN 文档上了解 text-transform 属性，使用 CSS 将 h1 文本转换为大写：
+  https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform 
+-->
+```
 
+```html
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <title>Motivation Meme</title>
+  <link rel="stylesheet" href="./solution.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
 
+<body>
 
+  <div class="poster">
+    <img class="motivation-img" src="./assets/images/daenerys.jpeg" src="daenerys with egg" />
+    <h1>That Special Moment</h1>
+    <p>When you find the perfect avocado at the supermarket</p>
+  </div>
+</body>
 
+</html>
+```
 
+```css
+/* 为整个页面设置黑色背景 */
+body {
+  background-color: black;
+}
 
+/* 将 h1 标题转换为大写字母并设置较大的字体大小 */
+h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
 
+/* .poster 类用于包含整个海报内容 */
+.poster {
+  /* 设置海报宽度为页面的一半 */
+  width: 50%;
+  /* 将海报居中显示 */
+  margin-left: 25%;
+  /* 为海报与顶部之间留出空间 */
+  margin-top: 100px;
+  /* 设置文本颜色为白色 */
+  color: white;
+  /* 使用 Google 字体 Libre Baskerville */
+  font-family: "Libre Baskerville", serif;
+  /* 将海报内的文本居中对齐 */
+  text-align: center;
+}
 
+/* 为图片添加白色边框并调整图片大小 */
+.motivation-img {
+  /* 添加 5px 的白色边框 */
+  border: 5px solid white;
+  /* 图片宽度调整为容器的 100% */
+  width: 100%;
+}
+```
 
