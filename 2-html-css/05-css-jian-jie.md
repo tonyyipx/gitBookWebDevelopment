@@ -4,8 +4,6 @@
 
 `什么是 CSS？`
 
-What How Why
-
 * What：**C**ascading **S**tyle **S**heet (**CSS**) **层叠样式表**
   * **C**ascading
     * 在编程中，“cascading” 通常与 **CSS（Cascading Style Sheets）** 相关，即样式会按照优先级从上到下逐层应用。
@@ -28,108 +26,60 @@ What How Why
       * 这是一个突破：能够将风格与内容分开
         * 模块化：关注点分离，以便有人负责 (like 汽车生产线)
 * How：[Example HTML Website](https://appbrewery.github.io/just-add-css/)
+* 网页中的每个元素本质上都是由一系列盒子组成的
 
 ### ★ 如何添加 CSS
 
 内联样式 `Inline CSS` 内部样式 `Internal CSS` 外部样式 `External CSS`
 
-* Inline
-  *   \<tag style="css" />
-
-      ```html
-      <head>
-        <meta charset="UTF-8">
-        <title>Inline</title>
-      </head>
-
-      <body>
-        <h1 style="color: blue;">Style Me in Blue!</h1>
-      </body>
-      ```
-  * 单个元素
-* Internal
-  *   \<style>css\</style>
-
-      ```html
-      <head>
-        <meta charset="UTF-8">
-        <title>Internal</title>
-        <style>
-          h1 {
-            color: red;
-          }
-        </style>
-      </head>
-
-      <body>
-        <h1>Style Me in Red!</h1>
-      </body>
-      ```
-  * 单个网页
-* External
-  *   \<link rel="stylesheet" href="style.css" />
-
-      ```css
-      h1 {
-        color: green;
-      }
-      ```
-
-
-
-      ```html
-      <head>
-        <meta charset="UTF-8">
-        <title>External</title>
-        <link rel="stylesheet" href="./style.css" />
-      </head>
-
-      <body>
-        <h1>Style Me in Green</h1>
-      </body>
-      ```
-  * 整个网站（多个页面）
-    * rel: relationship - 指的是所链接的东西的作用是什么
-    * href: located - 位于哪里
+* 内联CSS
+  * CSS属性可以放在HTML文件中，直接位于各个HTML标签内，为页面提供样式
+* 内部CSS
+  * 在 \<head> 标签中使用 \<style> 标签定义样式
+* 外部CSS
+  * 使用 \<link rel=”stylesheet” href=”css\_file”> 在HTML文件的 \<head> 中链接到.css文件
+  * rel: relationship - 指的是所链接的东西的作用是什么
+  * href: located - 位于哪里
 
 ### ★CSS 选择器
 
 `选择应用 CSS 的位置`
 
-* 只需指定两件事就可以创建CSS规则
+* CSS语法结构：选择器 { 属性 : 值; }
   * Property: Value
     * ```css
       color: red;
       ```
-* 规则之外的部分\
-  CSS Selector（选择器）：是选择HTML的部分，以便应用花括号之间的任何规则
-  * Element Selector（元素选择器）：选择一个特定的HTML标签
+* CSS Selector（选择器）：是选择HTML的部分，以便应用花括号之间的任何规则
+  * 元素（Element）选择器：选择一个特定的HTML标签
+    * 例如： h1, img, body
     * ```css
       h1 {
         color: red;
       }
       ```
-  * Class Selector（类选择器）- 需要特殊符号`.`：将不同元素分组为一类
-    * <pre class="language-css"><code class="lang-css"><strong>.red-text {
-      </strong>  color: red;
-      }
-      </code></pre>
-    * ```html
-      <h2 class="red-text">Red heading</h2>
-      <p class="red-text">Red paragraph</p>
-      ```
-  * Id Selector（Id选择器）- 需要特殊符号`#`
-    *   #### `id` 和 `class` 的对比
-
-        | 属性      | 是否唯一 | 用途            | 选择器写法     |
-        | ------- | ---- | ------------- | --------- |
-        | `id`    | 是    | 标识唯一元素，适合单次使用 | `#header` |
-        | `class` | 否    | 标识一组元素，适合重复使用 | `.button` |
-
-
-    * `id` 应用于那些只会出现一次的元素，比如导航栏、页眉、页脚等。\
-      而 `class` 更适合用于重复的、可复用的样式设计
-  * Attribute Selector（属性选择器）：选择具有特定属性/**Value**(**属性值**)的元素
+  * 类（Class）选择器  - 需要特殊符号`.`：将不同元素分组为一类
+    * 在HTML中，HTML标签包含 class=" "
+      * ```html
+        <h2 class="red-text">Red heading</h2>
+        <p class="red-text">Red paragraph</p>html
+        ```
+    * 在CSS中，选择类时，在前面加一个 .
+      * .class\_identifier { 属性 : 值; }
+      * <pre class="language-css"><code class="lang-css"><strong>.red-text {
+        </strong>  color: red;
+        }
+        </code></pre>
+  * ID选择器 - 需要特殊符号`#`：
+    * 在HTML中，HTML标签包含 id=" "
+      * 在CSS中，选择ID时，在前面加一个 #
+        * \#id\_identifier { 属性 : 值; }
+  * ID vs 类选择器
+    * ID - 只用于想修改单个HTML标签的样式
+      * 每个HTML文件只能有一个特定的 id\_identifier
+      * Class - 用于一组HTML标签，以便为该组提供一致的样式
+        * 一个HTML标签可以有多个类
+  * 属性（Attribute）选择器：选择具有特定属性/**Value**(**属性值**)的元素
     * 能让你在复杂的 HTML 结构中更精确地选择元素，特别适合根据属性条件应用样式，例如 `target`、`href`、`title`、`type` 等。
     *   #### 1. 基本属性选择器
 
@@ -271,7 +221,7 @@ What How Why
 
         * 属性选择器的优先级与类选择器相同（优先级为 **0, 1, 0**）。
           * 如果同时使用 `id`、类选择器、伪类等，优先级会根据标准规则决定。
-  * Universal Selector（通用选择器）
+  * 通用（Universal）选择器
     *   &#x20;CSS 中的一个选择器，用于选择文档中**所有的元素**。通用选择器使用星号（`*`）表示，简单且功能强大，可以用于为整个页面设定默认样式或进行全局操作。
 
         #### 基本用法
