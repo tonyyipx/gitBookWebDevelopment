@@ -66,10 +66,11 @@
         ```
     * 在CSS中，选择类时，在前面加一个 .
       * .class\_identifier { 属性 : 值; }
-      * <pre class="language-css"><code class="lang-css"><strong>.red-text {
-        </strong>  color: red;
+      * ```css
+        .red-text {
+          color: red;
         }
-        </code></pre>
+        ```
   * ID选择器 - 需要特殊符号`#`：
     * 在HTML中，HTML标签包含 id=" "
       * 在CSS中，选择ID时，在前面加一个 #
