@@ -37,13 +37,56 @@
       font-size: 20px;/* 字体大小 */
     }
     ```
-  * 意味什么
-    * 1 px（Pixel 像素）: 1/96th inch (0.26mm✖️0.26mm)
-    * 1 pt（Point 磅点）: 1/72nd inch(0.35mm✖️0.35mm) 【word文档的字体用pt】
-    * 1 em（）: 100% of parent
-    * 1 rem（）: 100% of root
+  *   意味什么
 
+      * 1 px（Pixel 像素）: 1/96th inch (0.26mm✖️0.26mm)
+      * 1 pt（Point 磅点）: 1/72nd inch(0.35mm✖️0.35mm) 【word文档的字体用pt】
+      * 1 em（）: 100% of parent: 相对上一级
+        *
 
+            <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 15.55.11.png" alt=""><figcaption></figcaption></figure>
+      * 1 rem（）: 100% of root：根据\<html>
+
+      <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 16.02.53.png" alt=""><figcaption><p>px vs. pt vs. em vs. rem</p></figcaption></figure>
+* Font Weight
+  * ```css
+    h1 {
+      font-weight: bold;/* 字体粗细 */
+    }
+    ```
+  * 一些方法来改变字体粗细
+    * Keywords（关键字）：normal/bold/...
+    * Relative to Parent（相对于父级）：lighter/bolder
+    * number：100-900（`-100`light or `+100`bold）
+* Font Family
+  * ```css
+    h1 {
+      font-family: Helvetica, sans-serif;/* 字体系列 */
+    }
+
+    h2 {
+      font-family: "Times New Roman", serif;
+    }
+    ```
+  *
+
+      <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 16.13.46.png" alt=""><figcaption></figcaption></figure>
+  * [浏览字体 - Google 字体](https://fonts.google.com/)（寻找免费字体）
+    * ```html
+      <head>
+        <!-- .... -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+      </head>
+      ```
+    * ```css
+       /* Link: https://fonts.google.com/specimen/Caveat */
+          #family {
+            font-family: 'Caveat', cursive;
+          }
+      ```
+  *
 
 ### ★检查 CSS
 
