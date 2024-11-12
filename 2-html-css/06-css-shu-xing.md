@@ -98,7 +98,29 @@
 
 `使用 CSS 概览功能`
 
-*
+* [Example HTML Website](https://appbrewery.github.io/just-add-css/)
+* Chrome开发者工具
+  * 打开
+    * More Tools -> Developer Tools
+    * 快捷键：`command`+`option`+`i` （windows）：`control`+`shift`+`i` （功能键）`F12`&#x20;
+    * 右键 -> Inspect
+  * 选择元素
+    *
+
+        <div align="left">
+
+        <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.00.09 (1).png" alt=""><figcaption></figcaption></figure>
+
+        </div>
+  * 元素（Element）选项卡的子部分
+    * 样式（Styles）部分：显示应用于元素的样式
+      * 单击style.css显示源码
+      *
+
+          <figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+      * 更改CSS工具
+        * 1
+        *
 
 
 
