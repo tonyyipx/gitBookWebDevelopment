@@ -104,52 +104,136 @@
     * More Tools -> Developer Tools
     * 快捷键：`command`+`option`+`i` （windows）：`control`+`shift`+`i` （功能键）`F12`&#x20;
     * 右键 -> Inspect
-  * 选择元素
-    *
+  *   选择元素
 
-        <div align="left">
+      <div align="left">
 
-        <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.00.09 (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.00.09 (1).png" alt=""><figcaption></figcaption></figure>
 
-        </div>
+      </div>
   *   元素（Element）选项卡的子部分
 
       *   样式（Styles）部分：显示应用于元素的样式
 
           * 单击style.css，显示其源码
 
-          <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.08.08.png" alt=""><figcaption><p>单击style.css，显示其源码</p></figcaption></figure>
+          <div align="left">
 
-          *   更改CSS工具
+          <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.08.08.png" alt="" width="375"><figcaption><p>单击style.css，显示其源码</p></figcaption></figure>
 
-              * eg. 选择`h1`，单击“添加”，就可以为这个`h1`添加样式
+          </div>
+
+          *   更改CSS工具\
+              eg. 选择`h1`，单击“添加”，就可以为这个`h1`添加样式
+
+              <div align="left">
 
               <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.10.41 (1).png" alt=""><figcaption><p>选择<code>h1</code>，单击“添加”，就可以为这个<code>h1</code>添加样式</p></figcaption></figure>
+
+              </div>
           * 当自己的规则覆盖其他现有的规则
 
+          <div align="left">
+
           <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.21.52.png" alt=""><figcaption></figcaption></figure>
+
+          </div>
       * 如何知道实际应用到你的CSS元素上的内容呢？\
         计算后的样式（Computerd）部分：用于查看 HTML 元素**最终计算样式**的部分
 
-      <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.26.16.png" alt=""><figcaption></figcaption></figure>
+      <div align="left">
+
+      <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.26.16.png" alt="" width="563"><figcaption></figcaption></figure>
+
+      </div>
   *   CSS Overview：显示一堆有的东西（颜色、字体...）
 
-      <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.28.48.png" alt=""><figcaption></figcaption></figure>
+      <div align="left">
 
-      <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.30.57.png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.28.48.png" alt="" width="563"><figcaption></figcaption></figure>
+
+      </div>
+
+      <div align="left">
+
+      <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.30.57.png" alt="" width="563"><figcaption></figcaption></figure>
+
+      </div>
 
       * [CSS Inspection](https://appbrewery.github.io/css-inspection/)
-
-
 
 ### ★CSS 盒子模型 - 边距、填充和边框
 
 `Margin（外边距）、Padding（内边距） 和 Border（边框）`
 
-\
+*   盒子模型：有宽度和高度形成的
+
+    <div align="left">
+
+    <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.38.50.png" alt="" width="375"><figcaption></figcaption></figure>
+
+    </div>
+
+    * height width&#x20;
+    * `Border`&#x20;
+    * ```css
+      border: 10px solid black;/* 1边框的厚度 2边框的样式 3边框的颜色*/
+      /* 注意：html元素的盒子盒子（height width）没有改变 */
+      ```
 
 
 
+    <div align="left">
+
+    <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.51.40.png" alt="" width="375"><figcaption><p>去除顶部边框</p></figcaption></figure>
+
+    </div>
+
+    <div align="left">
+
+    <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.54.35.png" alt="" width="563"><figcaption></figcaption></figure>
+
+    </div>
+*   `Padding`&#x20;
+
+    <div align="left">
+
+    <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 17.58.12 (1).png" alt="" width="375"><figcaption><p>无法使用padding获得元素之间的间距</p></figcaption></figure>
+
+    </div>
+*   `Margin`&#x20;
+
+    <div align="left">
+
+    <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 18.00.39 (1).png" alt="" width="375"><figcaption></figcaption></figure>
+
+    </div>
+*   检查器的Box Model &#x20;
+
+    <div align="left">
+
+    <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 18.04.56.png" alt=""><figcaption></figcaption></figure>
+
+    </div>
+* [CSS Box Model](https://appbrewery.github.io/box-model/)
+*   Padding/Margin/Border-width设值&#x20;
+
+    <div align="left">
+
+    <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 18.08.21.png" alt="" width="563"><figcaption></figcaption></figure>
+
+    </div>
+* 人造盒子：将不同的内容的内容组合在一起，以便对其设置样式\
+  \<div>（content division Element 内容划分元素）
+  * 将一组HTML元素组合成一个盒子
+  * 对于组织和划分网页内容非常有用
+* [pesticide chrome extension](https://chromewebstore.google.com/detail/pesticide-for-chrome/bakpbgckdnepkmkeaiomhmfcnejndkbi?hl=en)：用于 **调试网页布局** 的 Chrome 浏览器扩展工具
+
+<div align="left">
+
+<figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 18.22.43.png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 ### ★\[项目] 励志海报网站
 
