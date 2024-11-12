@@ -82,15 +82,23 @@
       ```
     * ```css
        /* Link: https://fonts.google.com/specimen/Caveat */
-          #family {
+          h1 {
             font-family: 'Caveat', cursive;
           }
       ```
-  *
+* Text Align
+  * ```css
+    h1 {
+      text-align: center;/* 文本对齐 left right start end */
+    }
+    ```
+  * [text-align - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align)
 
 ### ★检查 CSS
 
 `使用 CSS 概览功能`
+
+*
 
 
 
