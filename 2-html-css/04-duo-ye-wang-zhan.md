@@ -51,6 +51,8 @@
 
 ### ★\[项目] HTML 作品集
 
+<figure><img src="../.gitbook/assets/goal (3).png" alt=""><figcaption></figcaption></figure>
+
 ```html
 <!-- TODO 1: 创建 HTML 基本模板 -->
 

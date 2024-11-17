@@ -88,6 +88,8 @@
 
 `为您下个派对创建网站`
 
+<figure><img src="../.gitbook/assets/goal (7).png" alt=""><figcaption></figcaption></figure>
+
 ```html
 <!-- 这是一个可能的解决方案 -->
 <h1>It's My Birthday!</h1>

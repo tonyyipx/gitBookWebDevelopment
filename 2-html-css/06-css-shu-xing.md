@@ -240,6 +240,8 @@
 
 `制作自己的表情包`
 
+<figure><img src="../.gitbook/assets/goal (1).png" alt=""><figcaption></figcaption></figure>
+
 ```html
 <!-- 
   TODO: 创建一个励志风格的网页。
@@ -320,4 +322,3 @@ h1 {
   width: 100%;
 }
 ```
-

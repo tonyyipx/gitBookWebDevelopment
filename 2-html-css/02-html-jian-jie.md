@@ -55,6 +55,8 @@
 
 `一个展示您收藏夹的的网站`
 
+<figure><img src="../.gitbook/assets/goal (6).png" alt=""><figcaption></figcaption></figure>
+
 ```html
 <h1>The Best Movies According to Tony</h1>
 <h2>My top 3 movies of all-time.</h2>

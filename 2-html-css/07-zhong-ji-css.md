@@ -17,9 +17,65 @@
     每个级联中几乎都有一个迷你级联级别，你可以确定哪一个时重要的？
 
     <figure><img src="../.gitbook/assets/Screenshot 2024-11-16 at 20.15.46.png" alt=""><figcaption></figcaption></figure>
-*
+*   goal
 
+    <figure><img src="../.gitbook/assets/goal.png" alt=""><figcaption></figcaption></figure>
+*   css
 
+    ```css
+    #outer-box {
+      background-color: purple;
+    }
+
+    .box {
+      background-color: blue;
+      padding: 10px;
+    }
+
+    .inner-box {
+      background-color: red;
+    }
+
+    p {
+      color: yellow;
+      margin: 0;
+      padding: 0;
+    }
+
+    .white-text {
+      color: white;
+    }
+    ```
+*   html
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+      <meta charset="UTF-8">
+      <title>CSS Cascade</title>
+      <link rel="stylesheet" href="./solution.css">
+    </head>
+    <body>
+      <div id="outer-box">
+        <div class="box">
+          <p>Yellow Text</p>
+          <div class="box inner-box">
+            <p class="white-text">White Text</p>
+          </div>
+        </div>
+        <div class="box">
+          <p>Yellow Text</p>
+          <div class="box inner-box">
+            <p class="white-text">White Text</p>
+          </div>
+        </div>
+      </div>
+    </body>
+
+    </html>
+    ```
 
 ### ★Combining CSS Selectors 组合CSS选择器
 

@@ -331,6 +331,8 @@
 
 `学习西班牙语的网站`&#x20;
 
+<figure><img src="../.gitbook/assets/goal (2).png" alt=""><figcaption></figcaption></figure>
+
 ```html
 <!-- 
 TODOs
