@@ -81,7 +81,22 @@
 
 `如何选择特定元素进行样式设置`
 
+*
 
+    <figure><img src="../.gitbook/assets/Screenshot 2024-11-17 at 21.58.33.png" alt=""><figcaption></figcaption></figure>
+* 一些规则：
+  *   组（Group）：使用`,`隔开
+
+      <figure><img src="../.gitbook/assets/Screenshot 2024-11-17 at 22.02.48.png" alt=""><figcaption></figcaption></figure>
+  *   子项（Child）：使用`>`来选择另一个选择器的子项
+
+      <figure><img src="../.gitbook/assets/Screenshot 2024-11-17 at 22.09.09.png" alt=""><figcaption></figcaption></figure>
+  *   后代（Descendant）：
+
+      <figure><img src="../.gitbook/assets/Screenshot 2024-11-17 at 22.17.27.png" alt=""><figcaption></figcaption></figure>
+  * 链接（Chaining）：
+  * 1
+  * 1
 
 
 
