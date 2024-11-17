@@ -100,9 +100,6 @@
   *   组合组合器（Combining Combiners）：
 
       <figure><img src="../.gitbook/assets/Screenshot 2024-11-17 at 22.32.20.png" alt=""><figcaption></figcaption></figure>
-  * 1
-
-
 
 ### ★CSS Positioning CSS定位
 
