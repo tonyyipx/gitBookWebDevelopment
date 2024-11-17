@@ -94,8 +94,12 @@
   *   后代（Descendant）：
 
       <figure><img src="../.gitbook/assets/Screenshot 2024-11-17 at 22.17.27.png" alt=""><figcaption></figcaption></figure>
-  * 链接（Chaining）：
-  * 1
+  *   链接（Chaining）：
+
+      <figure><img src="../.gitbook/assets/Screenshot 2024-11-17 at 22.27.51.png" alt=""><figcaption></figcaption></figure>
+  *   组合组合器（Combining Combiners）：
+
+      <figure><img src="../.gitbook/assets/Screenshot 2024-11-17 at 22.32.20.png" alt=""><figcaption></figcaption></figure>
   * 1
 
 
