@@ -19,7 +19,7 @@
     <figure><img src="../.gitbook/assets/Screenshot 2024-11-16 at 20.15.46.png" alt=""><figcaption></figcaption></figure>
 *   goal
 
-    <figure><img src="../.gitbook/assets/goal.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/goal (1).png" alt=""><figcaption></figcaption></figure>
 *   css
 
     ```css
@@ -105,13 +105,70 @@
 
 `相对（Relative）、绝对（Absolute）、固定（Fixed）和静态（Static）定位`
 
+*   [CSS Positioning Demo](https://appbrewery.github.io/css-positioning/)
 
+    <figure><img src="../.gitbook/assets/Screenshot 2024-11-18 at 19.32.56.png" alt=""><figcaption></figcaption></figure>
+* [Pesticide for Chrome - Chrome Web Store](https://chromewebstore.google.com/detail/pesticide-for-chrome/bakpbgckdnepkmkeaiomhmfcnejndkbi?hl=en)
+* 静态定位（Static Positioning）- `HTML的默认流动性`
+  *   无论添加任何属性，它都不会执行任何操作
 
+      <figure><img src="../.gitbook/assets/Screenshot 2024-11-18 at 19.47.02.png" alt=""><figcaption></figcaption></figure>
+* 相对定位（Relative Positioning）- `相对于默认位置定位`&#x20;
+  * 1![](<../.gitbook/assets/Screenshot 2024-11-18 at 19.49.43.png>)
+  *
 
+      <figure><img src="../.gitbook/assets/Screenshot 2024-11-18 at 19.49.00.png" alt=""><figcaption></figcaption></figure>
+* 绝对定位（Absolute Positioning）- `相对于最近的定位祖先元素或网页左上角定位`&#x20;
+  *   Z轴索引 `z-index` （默认z-index: 0），当你设置Absolute时，即使z-index: 0，它实际上会把元素取出来，并将其放在另一层上
 
+      <figure><img src="../.gitbook/assets/Screenshot 2024-11-18 at 19.59.29.png" alt=""><figcaption></figcaption></figure>
+* 固定定位（Fixed Positioning）- `相对于浏览器窗口左上角定位`&#x20;
+  * 即使你在网页上上下滚动，它仍会相对于浏览器位于相同的位置
+  *
 
+      <figure><img src="../.gitbook/assets/Screenshot 2024-11-18 at 20.10.29.png" alt=""><figcaption></figcaption></figure>
+  *
 
+      <figure><img src="../.gitbook/assets/goal.png" alt=""><figcaption></figcaption></figure>
+  *
 
+      ```html
+      <!DOCTYPE html>
+      <html>
+
+      <head>
+        <title>CSS Positioning Exercise</title>
+        <style>
+          .red-circle {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 150px;
+            left: 250px;
+          }
+          
+          .blue-box {
+            background-color: blue;
+            width: 500px;
+            height: 300px;
+            position: relative;
+            top: 200px;
+            left: 200px;
+          }
+
+        </style>
+      </head>
+
+      <body>
+        <div class="blue-box">
+          <div class="red-circle"></div>
+        </div>
+      </body>
+
+      </html>
+      ```
 
 ### ★\[Project] CSS Flag \[项目] CSS旗帜
 

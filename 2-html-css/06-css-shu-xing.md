@@ -240,7 +240,7 @@
 
 `制作自己的表情包`
 
-<figure><img src="../.gitbook/assets/goal (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/goal (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```html
 <!-- 
